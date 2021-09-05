@@ -2,26 +2,53 @@
 
 .gallery-image img {
     width: 100%;
+    border-radius: 50%
+
 }
 
 header .header-banner {
 
-    background-image: url("img/header.png");
     width: 100%;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 750px);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    display: table;
     
 }
 
-header .logo {
+/*header .logo {
 
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     padding: 10px 0 20px 0;
+    
+}*/
+
+header img {
+    width: 100%;
+    border-width: 30px;
+    border-color: aqua;
+} 
+
+.index-header {
+    padding: 0 30px 0 0;
+}
+
+.aboutus {
+    padding: 30px 0 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gallery-h2 {
+    
+    font-family: "Gentium Basic", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: left;
     
 }
 
@@ -29,12 +56,12 @@ header h1 {
 
     font-family: "Gentium Basic", serif;
     font-weight: 700;
-    font-style: italic;
-    font-size: 60px;
-    color: #ffffff;
+    font-size: 45px;
+    color: #000000;
     line-height: 70px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 8px #000000;
+    text-align: center;
+   /* text-shadow: 2px 2px 8px #000000; */
         
 }
         
@@ -42,10 +69,11 @@ header h2 {
         
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 5px;
-    color: #ffffff;
+    font-size: 20px;
+    font-style: italic;
+    color: #000000;
     text-transform: uppercase;
+    text-align: center;
         
 }
 
@@ -80,14 +108,14 @@ nav ul li a {
 footer {
 
     width: calc(100% - 80px);
-    padding: 40px 40px;
+    padding: 10px 40px;
     background-color: #172029;
     margin-top: 20px;
     overflow: hidden;
     
 }
 
-.disclaimer {
+.hidden {
 
     display: none;
     
@@ -104,7 +132,6 @@ footer ul {
 footer ul li {
     
     display: block;
-    padding: 0 0 10px 0;
     
 }
 
@@ -112,11 +139,9 @@ footer ul li p {
 
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 12px;
     letter-spacing: 2px;
-    color: #ffffff;
-    text-transform: uppercase;
-    
+    color: #ffffff;    
 }
     
 footer ul li a {
@@ -133,8 +158,9 @@ footer ul li a {
 
 .footer-sm {
 
-    width: 32px;
+    width: 42px;
     float: right;
+    padding: 20px 0 0 0;
     
 }
     
@@ -155,18 +181,6 @@ hr {
     
 }
     
-.gallery-h2 {
-    
-    font-family: "Gentium Basic", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    letter-spacing: 2px;
-    padding: 10px;
-    color: #3a383d;
-    text-transform: uppercase;
-    text-align: center;
-    
-}
 
 .gallery-image {
 
@@ -176,7 +190,10 @@ hr {
     -webkit-flex-basis: 300px;
     -moz-flex-basis: 300px;
     flex-basis: 300px;
+    
 } 
+
+
     
 .post-header {       
     
@@ -218,7 +235,7 @@ hr {
 
     header .header-banner {
     
-          height: calc(100vh - 400px);
+          height: calc(100vh - 750px);
     
     }   
     
@@ -245,7 +262,7 @@ hr {
 
 @media only screen and (min-width: 950px) {
 
-    .disclaimer {
+    .footer-contacts {
     
           display: block;
           font-family: "Open Sans", sans-serif;
@@ -260,7 +277,7 @@ hr {
     
     }
     
-    .disclaimer span {
+    .footer-contacts span {
     
           font-style: italic;
     
@@ -268,3 +285,27 @@ hr {
     
 }
 
+@media only screen and (min-width: 950px) {
+
+    .hidden {
+    
+          display: block;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          letter-spacing: 2px;
+          line-height: 24px;
+          color: #ffffff;
+          text-transform: uppercase;
+          float: right;
+          margin: 0 80px;
+    
+    }
+    
+    .hidden span {
+    
+          font-style: italic;
+    
+    }
+    
+    }
