@@ -2,7 +2,7 @@
 
 header .header-banner {
     width: 100%;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 900px);
     display: table;
  /*   background-repeat: no-repeat;
     background-position: center; */
@@ -40,19 +40,34 @@ header h2 {
         
 }
 
+.forMobile {
+    display: contents;
+}
+
+header hr {
+
+    color: #242b36;
+    border-width: 2px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    
+}
+
 header nav ul {
 
     display: block;
     margin: 0 auto;
     text-align: center; /*IE*/
     width: fit-content;
+    padding: 16px 16px;
     
 }
     
 header nav ul li {
     
     display: inline-block;
-    padding: 16px 16px;
+    margin-right: 10px;
     
 }
 
@@ -61,7 +76,7 @@ nav ul li a {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: #172029;
     text-transform: uppercase;
     text-decoration: none;
@@ -70,12 +85,22 @@ nav ul li a {
 
 header img {
     width: 100%;
-    height: calc(100vh - 400px);
+    height: calc(100vh - 500px);
  /*   border-width: 30px;
     border-color: aqua; */
 } 
 
-.index-header {
+.paragraph-title {
+    font-family: "Gentium Basic", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/*.index-header {
     padding: 0 30px 0 0;
     display: flex;
     flex-flow: row wrap;
@@ -85,37 +110,9 @@ header img {
     -moz-flex-flow: row wrap;
     justify-content: center;
     -o-flex-flow: row wrap;
-    justify-content: center;
-}
-
-
-.aboutus {
-    padding: 0 30px 30px 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    float: left;
-}
-
-.paragraph-title {
-    font-family: "Gentium Basic", sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    padding: 10px;
-    color: #3a383d;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-/*.gallery-h2 {
     
-    font-family: "Gentium Basic", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    padding: 10px;
-    color: #3a383d;
-    text-transform: uppercase;
-    text-align: left;
-}*/
+}
+uus nimi meist*/
 
 .gallery-links {
 
@@ -131,8 +128,44 @@ header img {
     
 }
 
-.gallery-image {
+.aboutus {
+   /* padding: 20px; */ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    position: relative;
+    float: left; 
+  /*  display: inline-block; */
+   /* margin: 10px; */
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+    font: inherit;
+}
 
+.hidden {
+
+    display: none;
+    
+}
+
+/* .recipe-title{
+    display: none;
+} */
+
+/*.gallery-h2 {
+    
+    font-family: "Gentium Basic", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: left;
+}*/
+
+
+
+.gallery-image {
     margin: 10px;
     position: relative;
     text-align: center;
@@ -143,7 +176,8 @@ header img {
 } 
 
 .gallery-image img {
-    width: 100%;
+    width: 80%;
+    height: calc(100vh - 500px);
     border-radius: 50%
 
 }
@@ -165,7 +199,7 @@ header img {
     
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 50%;
     transform: translate(-50%, -50%);
     
 }
@@ -178,12 +212,6 @@ footer {
     background-color: #172029;
     margin-top: 20px;
     overflow: hidden;
-    
-}
-
-.hidden {
-
-    display: none;
     
 }
 
@@ -239,6 +267,84 @@ footer ul li a {
 }
 
 
+@media only screen and (min-width:950px) {
+
+    header .logo {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+
+    .forMobile {
+        display: none;
+    }
+        
+    header nav ul li {
+        
+        display: inline-block;
+        padding: 6px 160px 16px;
+        
+    }
+
+    header img {
+        width: 95%;
+        height: calc(100vh - 375px);
+        display: table;
+        margin: 0 auto;
+    }  
+
+    .paragraph-title {
+        padding: 20px 0 0 80px ;
+    }
+
+
+    .gallery-links {
+        justify-content: space-around;
+        
+    }
+    
+    .aboutus {
+        
+        -webkit-flex-basis: 550px;
+        -moz-flex-basis: 550px;
+        flex-basis: 550px;
+
+    }
+
+    .hidden {
+        display: inline-block; 
+        position: relative;  
+        margin: 10px;
+        margin: 0 80px;  
+        text-align: center; 
+        -webkit-flex-basis: 500px;
+        -moz-flex-basis: 500px;
+        flex-basis: 500px;
+
+    }
+
+    .hidden img {
+        width: 100%;
+        float: right;
+        position: relative;
+
+    }
+
+    .gallery-image{
+        margin-top: 40px;
+
+        padding: 20px;
+    }
+
+    .gallery-image img {
+        width: 80%;
+        height: calc(80vh - 500px);
+        border-radius: 50%
+
+    }
+}
+
 /*@media only screen and (min-width: 950px) {   
 
     header .header-banner {
@@ -264,6 +370,34 @@ footer ul li a {
     
            padding: 16px 42px;
     
+    }
+
+    .hidden {
+    
+        display: block; 
+        position: relative;  
+        float: right; 
+        margin: 10px;
+        margin: 0 80px;  
+        text-align: center; 
+        -webkit-flex-basis: 300px;
+        -moz-flex-basis: 300px;
+        flex-basis: 300px;
+
+    }
+
+    .hidden img {
+        width: 100%;
+        float: right;
+        position: relative;
+
+    }
+
+    .gallery-image img {
+        width: 80%;
+        height: calc(80vh - 500px);
+        border-radius: 50%
+
     }
     
 }
