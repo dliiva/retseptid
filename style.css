@@ -239,7 +239,7 @@ footer ul li a {
 }
 
 
-@media only screen and (min-width: 950px) {   
+/*@media only screen and (min-width: 950px) {   
 
     header .header-banner {
     
@@ -321,6 +321,7 @@ footer ul li a {
     .recipe-title {
         padding: 0 50px 0 0;
     }
+}
 
 @media only screen and (max-width: 950px) {
 
@@ -335,5 +336,4 @@ footer ul li a {
     }
     
 }
-    
-}
+    */
