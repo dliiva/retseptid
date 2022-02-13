@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
 
-.gallery-image img {
-    width: 100%;
-    border-radius: 50%
-
-}
-
 header .header-banner {
     width: 100%;
     height: calc(100vh - 500px);
@@ -20,55 +14,6 @@ header .logo {
     text-align: center;
     padding: 10px 0 20px 0;
 }
-
-header img {
-    width: 100%;
-    height: calc(100vh - 400px);
- /*   border-width: 30px;
-    border-color: aqua; */
-} 
-
-.index-header {
-    padding: 0 30px 0 0;
-    display: flex;
-    flex-flow: row wrap;
-    display: -webkit-flex;
-    -webkit-flex-flow: row wrap;
-    display: -moz-flex;
-    -moz-flex-flow: row wrap;
-    justify-content: center;
-    -o-flex-flow: row wrap;
-    justify-content: center;
-}
-
-
-.aboutus {
-    padding: 0 30px 30px 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    float: left;
-}
-
-.paragraph-title {
-    font-family: "Gentium Basic", sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    padding: 10px;
-    color: #3a383d;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-/*.gallery-h2 {
-    
-    font-family: "Gentium Basic", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    padding: 10px;
-    color: #3a383d;
-    text-transform: uppercase;
-    text-align: left;
-}*/
 
 header h1 {
 
@@ -122,6 +67,109 @@ nav ul li a {
     text-decoration: none;
     
 }
+
+header img {
+    width: 100%;
+    height: calc(100vh - 400px);
+ /*   border-width: 30px;
+    border-color: aqua; */
+} 
+
+.index-header {
+    padding: 0 30px 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.aboutus {
+    padding: 0 30px 30px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    float: left;
+}
+
+.paragraph-title {
+    font-family: "Gentium Basic", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/*.gallery-h2 {
+    
+    font-family: "Gentium Basic", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: left;
+}*/
+
+.gallery-links {
+
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.gallery-image {
+
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+    
+} 
+
+.gallery-image img {
+    width: 100%;
+    border-radius: 50%
+
+}
+
+.post-header {       
+    
+    /*kujundus*/
+    
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111111;
+    
+       /*positsioneerimine*/
+    
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    
+}
+
 
 footer {
 
@@ -190,69 +238,12 @@ footer ul li a {
     
 }
 
-hr {
-
-    color: #4f5663;
-    border-width: 2px;
-    width: 30%;
-    margin: 0 auto;
-    margin-bottom: 5px;
-    
-}
-    
-
-.gallery-image {
-
-    margin: 10px;
-    position: relative;
-    text-align: center;
-    -webkit-flex-basis: 300px;
-    -moz-flex-basis: 300px;
-    flex-basis: 300px;
-    
-} 
-
-.post-header {       
-    
-    /*kujundus*/
-    
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    letter-spacing: 3px;
-    line-height: 24px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-shadow: 3px 3px 9px #111111;
-    
-       /*positsioneerimine*/
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-
-.gallery-links {
-
-    display: flex;
-    flex-flow: row wrap;
-    display: -webkit-flex;
-    -webkit-flex-flow: row wrap;
-    display: -moz-flex;
-    -moz-flex-flow: row wrap;
-    justify-content: center;
-    -o-flex-flow: row wrap;
-    justify-content: center;
-    
-}
 
 @media only screen and (min-width: 950px) {   
 
     header .header-banner {
     
-          height: calc(100vh - 700px);
+          height: calc(100vh - 1200px);
     
     }   
     
@@ -322,9 +313,27 @@ hr {
         position: relative;
 
     }
+
+    .paragraph-title {
+        padding: 0 50px 0 0;
+    }
     
     .recipe-title {
         padding: 0 50px 0 0;
     }
+
+@media only screen and (max-width: 950px) {
+
+    hr {
+
+        color: #4f5663;
+        border-width: 2px;
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        
+    }
+    
+}
     
 }
