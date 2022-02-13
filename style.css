@@ -22,7 +22,7 @@ header .logo {
 }
 
 header img {
-    width: 90%;
+    width: 100%;
     height: calc(100vh - 400px);
  /*   border-width: 30px;
     border-color: aqua; */
@@ -49,7 +49,7 @@ header img {
     float: left;
 }
 
-.aboutus-h2 {
+.paragraph-title {
     font-family: "Gentium Basic", sans-serif;
     font-weight: 600;
     font-size: 25px;
@@ -59,7 +59,7 @@ header img {
     text-align: left;
 }
 
-.gallery-h2 {
+/*.gallery-h2 {
     
     font-family: "Gentium Basic", sans-serif;
     font-weight: 600;
@@ -68,9 +68,7 @@ header img {
     color: #3a383d;
     text-transform: uppercase;
     text-align: left;
-    
-}
-
+}*/
 
 header h1 {
 
