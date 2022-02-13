@@ -7,22 +7,20 @@
 }
 
 header .header-banner {
-    
     width: 100%;
     height: calc(100vh - 700px);
-  /*  background-repeat: no-repeat;
+    display: table;
+ /*   background-repeat: no-repeat;
     background-position: center; */
-    
 }
 
-/*header .logo {
+header .logo {
 
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     padding: 10px 0 20px 0;
-    
-}*/
+}
 
 header img {
     width: 100%;
