@@ -15,7 +15,6 @@ header .header-banner {
 }
 
 header .logo {
-
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -78,7 +77,7 @@ header h1 {
     font-weight: 700;
     font-size: 45px;
     color: #000000;
-    line-height: 70px;
+    line-height: 0px;
     text-transform: uppercase;
     text-align: center;
    /* text-shadow: 2px 2px 8px #000000; */
